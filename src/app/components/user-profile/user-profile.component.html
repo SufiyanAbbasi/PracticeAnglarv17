@@ -1,0 +1,15 @@
+<!-- <p>user-profile works!</p> -->
+<!-- <h1>Input Value -{{inputval}}</h1>
+
+<input type="text"  [(ngModel)]="inputval"> -->
+
+<!-- Here appHighlight is a custom directive  -->
+<h1 appHighlight>
+    Name  {{name | uppercase}} ,
+    status {{isSingle? "single": "coder" }} and 
+    salary  {{salary | currency}}
+    <!-- country code is a custom pipe  -->
+    <!-- phone {{phone | countryCode}}  -->
+</h1>
+
+<button (click)="sendData()">Send Data</button>
