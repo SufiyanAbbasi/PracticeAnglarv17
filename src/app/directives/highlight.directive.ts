@@ -12,7 +12,7 @@ export class HighlightDirective {
   @HostBinding("style.backgroundColor")
   bgColor="red"
 
-  @HostListener("mouseenter")
+  @HostListener("mouseenter") 
   changeFontSize(){
     this.el.nativeElement.style.fontSize = "40px";
   }

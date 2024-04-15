@@ -1,5 +1,10 @@
 <h1>Hello</h1>
 @for(user of users; track user){
+    <!-- <app-user-profile userName={{user.name}} isSingle={{user.isSingle}} salary={{user.salary}} (myEvent)="recievedData($event)"></app-user-profile> -->
     <app-user-profile userName={{user.name}} isSingle={{user.isSingle}} salary={{user.salary}} (myEvent)="recievedData($event)"></app-user-profile>
 }
 
+<button (click)="clear()">Clear Users</button><hr>
+<app-joke></app-joke> <hr>
+<app-a></app-a>
+<app-b1></app-b1>
